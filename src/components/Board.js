@@ -30,6 +30,7 @@ export default class Board extends React.Component {
             this.setState(colors.splice(j, 0, generateColors(1)));
            }
          }
+           return this.state.colors;
        })
        setInterval(function(){
         generateColors(1);
